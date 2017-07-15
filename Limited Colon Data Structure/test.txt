@@ -1,0 +1,8 @@
+:Object1 (works with spaces!)
+	objProperty1 : "First property!"
+	objProperty2 : "Second property!"
+	it even works with spaces : "AWESOME!"
+#Comment
+:Object 2
+	it has its own properties : "!"
+:newProperty : "easy to understand!"
