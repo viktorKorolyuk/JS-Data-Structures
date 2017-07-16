@@ -23,7 +23,7 @@ function get(file_name) {
 };
 
 function read(input) {
-	// Remove formatting such as tabs
+	// Remove tab formatting
 	input = input.replace(/\t/g, "");
 
 	// Create an empty object to hold translated values
@@ -35,12 +35,13 @@ function read(input) {
 		// Split the data by line
 		var section = e.split("\n");
 
-		// Remove blank whitespace from array by detecting for non-whitespace characters
+		// Remove blank whitespace elements from array by detecting for non-whitespace characters
 		section = section.filter(e => {
 			return /\S/.test(e)
 		});
 
-		// Check if the entry is not a "single property"
+		// Check if the entry is not a "single property".
+		// Checks if the first value in the array does not contain a non-object variable
 		var singleCheck = section[0].split(" : ");
 		if (singleCheck.length == 2) {
 			obj[singleCheck[0]] = eval(singleCheck[1]);
