@@ -1,9 +1,7 @@
-tr : 3;
-test {
-data: 1;
+outerVariable : 1;
+Object1 {
+	data: 1;
+	obj {
+	data: "works";
+	}
 }
-t: 1;
-tt {
-t: 3;
-}
-tttt: [1,2,3];

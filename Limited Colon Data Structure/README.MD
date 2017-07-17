@@ -1,5 +1,5 @@
 # Colon Data Structure
-This data structure uses colons (":") to format data given to it.
+This data structure uses a colon (":") themed format to read data and convert it into JSON.
 
 ## Format
 Input

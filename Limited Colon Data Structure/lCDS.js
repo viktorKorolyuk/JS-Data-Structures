@@ -7,12 +7,6 @@ if (!process.argv[2]) {
 	process.exit(-1);
 }
 
-async function ss() {
-	var s = await get(process.argv[2]);
-	print(read(s));
-}
-ss();
-
 function get(file_name) {
 	return new Promise(resolve => {
 		fs.readFile(file_name, (err, data) => {
@@ -60,3 +54,8 @@ function read(input) {
 	});
 	return JSON.stringify(obj, null, " ");
 };
+
+async function start() {
+	print(read(await get(process.argv[2])));
+}
+start();
