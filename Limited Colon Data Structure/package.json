@@ -8,7 +8,7 @@
   },
   "author": "Viktor Korolyuk",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "fs": "^0.0.1-security"
   }
 }

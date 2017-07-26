@@ -76,7 +76,6 @@ function stringify(input = {}) {
 
 		// Verify the element is not an object reference.
 		if (typeof input[key] !== "object") {
-			// TODO: Based on input put the correct format (string, integer, array...)
 			lCDS += `\n:${key} : ${JSON.stringify(input[key])}`;
 			continue;
 		}
@@ -90,7 +89,8 @@ function stringify(input = {}) {
 			lCDS += `\n\t${innerKey} : ${JSON.stringify(input[key][innerKey])}`
 		}
 	}
-	return lCDS;
+	// Returning the string with first line removed
+	return lCDS.substring(1, lCDS.length);
 }
 
 // Silly function to aid in grabbing the needed file.
