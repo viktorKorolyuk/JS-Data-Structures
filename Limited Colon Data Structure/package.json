@@ -1,11 +1,14 @@
 {
-  "name": "idk_datastructure",
-  "version": "0.0.1",
-  "description": "A test data structure in nodeJS",
-  "main": "index.js",
+  "name": "lcds",
+  "version": "1.0.0",
+  "description": "A small and simple colon (punctuation) based data-structure",
+  "main": "lCDS.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node . input.txt"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Viktor Korolyuk",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "^0.0.1-security"
+  }
 }
