@@ -1,4 +1,4 @@
-# Colon Data Structure
+# (Limited) Colon Data Structure
 
 This data structure uses a colon (":") themed format to read data and convert it into JSON.<br>
 
