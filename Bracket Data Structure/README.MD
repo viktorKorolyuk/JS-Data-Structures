@@ -8,7 +8,7 @@ outerVariable : 1;
 Object1 {
 	data: 1;
 	obj {
-	data: "works";
+	 data: "works";
 	}
 }
 ```
